@@ -58,7 +58,7 @@
                 <h1 className="bottom-space">{`Hi! I'm Tobías`} <span ><span className="wrap">{`{ ${text} }`}</span></span></h1>
                     <p className="bottom-space">+3 years working as a Technical Digital Project manager, currently working at NTT DATA.</p>
                     {/* <Button variant="light" className="bottom-space">Let’s Connect <ArrowRightCircle size={25} /></Button> */}
-                    <p>Particularly interested in leveraging my skills as a software developer in my day to day work, to create solutions that result in high-quality products.</p>
+                    <p>Interested in leveraging my skills as a software developer in my day to day work to create solutions that translate into high-quality products.</p>
                     
                 </div>}
             </TrackVisibility>

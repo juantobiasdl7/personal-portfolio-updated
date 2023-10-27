@@ -24,7 +24,7 @@ demonstrating successful execution.</li>
                         <li><strong>Increase passenger registration to 6.1 million in Q2 2023, an 18.7% increase compared to Q2 2022</strong>. A 
 significant contribution to this growth was a shift in passenger check-in methods, with <strong>81% of users utilizing our web/app 
 platforms.</strong></li>
-<li>You can verify this information for yourself <a href="https://www.linkedin.com/posts/juancarlos-zuazua-c-53642619_genteviva-activity-7090701394017484800-A4jV?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">here </a> in the quarterly reports published by Juan Carlos Zuazua, CEO of Viva Aerobus. I share the link to his LinkedIn profile.</li>
+<li>You can verify this information for yourself <a href="https://www.linkedin.com/posts/juancarlos-zuazua-c-53642619_genteviva-activity-7090701394017484800-A4jV?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">here</a> in the quarterly reports published by Juan Carlos Zuazua, CEO of Viva Aerobus. I share the link to his LinkedIn profile.</li>
 <p>{""}</p>
                     </ul>
             </Col>
