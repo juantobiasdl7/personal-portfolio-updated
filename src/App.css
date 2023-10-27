@@ -62,6 +62,14 @@ nav.navbar.bg-color {
     overflow: hidden; */
 }
 
+.banner p {
+    color: #bbdbfe;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+}
+
 .banner .tagline {
     font-weight: 700;
     letter-spacing: 0.8px;
@@ -71,4 +79,163 @@ nav.navbar.bg-color {
     font-size: 20px;
     margin-bottom: 40px;
     display: inline-block;
+}
+
+.tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(90.21deg, #146cb5 -5.91%, #0e2843 111.58%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+/************ Current Job Experience Css ************/
+
+.project {
+    margin-top: 0;
+    padding: 20px 0 80px 0;
+    background-color: #e3eefb;
+    
+}
+
+.title-class {
+    color: #0f2b4a;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.project p{
+    font-size: 25px;
+    color: #0f2b4a;
+}
+
+.project li{
+    font-size: 20px;
+    color: #0f2b4a;
+    font-style: italic;
+}
+
+
+
+
+/************ Skills Css ************/
+
+.skill {
+    margin-top: 0;
+    padding: 0 0 40px 0;
+    background: linear-gradient(100.21deg, #153f65 -30.91%, #03080e 111.58%);
+}
+
+.skill-bx {
+    background: #03080e;
+    border: 1px solid white;
+    border-radius: 64px;
+    text-align: center;
+    padding: 30px 50px;
+    margin-top: -60px;
+}
+
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+
+.skill p {
+    color: #bbdbfe;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 25px 0;
+}
+
+.skill-slider {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+.image-size {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* For screen sizes between 0px and 360px */
+@media (max-width: 455px) {
+    .image-size {
+        width: 50%;
+    }
+}
+  
+  /* For screen sizes between 360px and 900px */
+@media (min-width: 456px) and (max-width: 900px) {
+    .image-size {
+    width: 90%;
+    }
+}
+
+.skills-p-text-styles {
+    margin: 15px 0 30px 0;
+    word-wrap: break-word;
+    cursor: pointer;
+    font-style: italic
+}
+
+.item a {
+    text-decoration: none;
+    color: #bbdbfe;;
+}
+
+
+/************ Footer Css ************/
+
+.footer {
+    padding: 10px 0 10px 0;
+    background: linear-gradient(120deg, rgba(21,103,180,1) 0%, rgba(19,70,121,1) 23%, rgba(0,0,0,1) 100%);
+}
+
+.footer-text {
+    align-items: center;
+}
+
+.social-icon {
+    margin-left: 30px;
+}
+.social-icon a {
+    width: 42px;
+    height: 42px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.social-icon a::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(0);
+	transition: 0.3s ease-in-out;
+}
+.social-icon a:hover::before {
+    transform: scale(1);
+}
+.social-icon a img {
+	width: 40%;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
+.social-icon a:hover img {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }

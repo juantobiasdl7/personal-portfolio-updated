@@ -47,8 +47,8 @@
 }
 
     return (
-    <section className="banner border-test" id="home">
-        <Container className="border-test">
+    <section className="banner" id="home">
+        <Container >
         <Row className="aligh-items-center">
             <Col xs={12} md={7} >
             <TrackVisibility>
@@ -56,8 +56,10 @@
                 <div>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1 className="bottom-space">{`Hi! I'm Tobías`} <span ><span className="wrap">{`{ ${text} }`}</span></span></h1>
-                    <p className="bottom-space">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <Button variant="light" className="bottom-space">Let’s Connect <ArrowRightCircle size={25} /></Button>
+                    <p className="bottom-space">+3 years working as a Technical Digital Project manager, currently working at NTT DATA.</p>
+                    {/* <Button variant="light" className="bottom-space">Let’s Connect <ArrowRightCircle size={25} /></Button> */}
+                    <p>Particularly interested in leveraging my skills as a software developer in my day to day work, to create solutions that result in high-quality products.</p>
+                    
                 </div>}
             </TrackVisibility>
             </Col>
