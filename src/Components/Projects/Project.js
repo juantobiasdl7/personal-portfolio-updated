@@ -43,8 +43,8 @@ platforms.</strong></li>
             </Col>
             <Col xs={12} xl={6} >
                 <div>
-                    <p className="bottom-space">Facilitate communication between technical teams and key stakeholders. This effective translation of business rules into technical language has promoted mutual 
-understanding and productive collaboration to meet OKR's.</p>
+                    <p className="bottom-space"><strong><i>My primary strength</i></strong> in my day-to-day work is facilitating communication between technical teams and key non-technical stakeholders. This <strong><i>effective translation of business rules into technical language</i></strong>  has promoted mutual 
+understanding and productive collaboration <strong><i>to meet OKR's.</i></strong></p>
 <p><strong>Tools used at work:</strong></p>
 
 <span className="tagline">React</span>

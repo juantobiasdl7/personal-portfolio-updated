@@ -4,7 +4,8 @@
     import 'animate.css';
     import TrackVisibility from 'react-on-screen';
     import Lottie from 'react-lottie-player';
-    import lottieJson from '../../Assets/Animations/Animation - 1698195064359.json'
+    import lottieJson from '../../Assets/Animations/Animation - 1698195064359.json';
+    import reactIcon from '../../Assets/Images/React-icon.svg';
 
     export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -59,7 +60,7 @@
                     <p className="bottom-space">+3 years working as a Technical Digital Project manager, currently working at NTT DATA.</p>
                     {/* <Button variant="light" className="bottom-space">Let’s Connect <ArrowRightCircle size={25} /></Button> */}
                     <p>Interested in leveraging my skills as a software developer in my day to day work to create solutions that translate into high-quality products.</p>
-                    
+                    <p style={{fontStyle:"italic", textDecoration:"underline"}}>I built this site myself using React.js <span><img src={reactIcon} alt="" style={{height:"15px", fontStyle:"italic"}} /></span></p>
                 </div>}
             </TrackVisibility>
             </Col>

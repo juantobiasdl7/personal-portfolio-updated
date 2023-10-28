@@ -131,7 +131,7 @@ nav.navbar.bg-color {
 }
 
 .skill-bx {
-    background: #03080e;
+    background: rgba(3, 8, 14, 0.97);
     border: 1px solid white;
     border-radius: 64px;
     text-align: center;
