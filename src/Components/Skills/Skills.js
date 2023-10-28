@@ -46,7 +46,7 @@ mobile: {
                 <Row>
                     <Col xs={12} md={12} lg={12}>
                         <Container className="skill-bx">
-                            <h2>Credentials</h2>
+                            <h2 style={{textDecoration:"underline"}}><i>Certifications</i></h2>
                             <p>Below are certifications I've earned throughout my professional journey.</p>
                             <Carousel responsive={responsive} showDots autoPlay={true} autoPlaySpeed={2000} infinite={true} className="skill-slider">
                                 <div className="item ">

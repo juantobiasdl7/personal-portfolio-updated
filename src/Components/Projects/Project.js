@@ -14,7 +14,7 @@ return (
         </Row>
         <Row className="aligh-items-center">
             <Col xs={12} xl={6}>
-                    <p className="p-class">Technical Digital Project Manager leading 2 projects, Viva Aerobus Web & Viva  Aerobus Apps (Android & iOS).</p>
+                    <p className="p-class"><u><i>Technical Digital Project Manager leading 2 projects,</i></u> Viva Aerobus Web Application & Viva  Aerobus Apps (Android & iOS).</p>
                     <p><strong>Accomplishments:</strong></p>
                     <ul>
                         <li>E-commerce mobile applications <strong>rated 4.8 out of 5 for iOS & Android.</strong></li>
