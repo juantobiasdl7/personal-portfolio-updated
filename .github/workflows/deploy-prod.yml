@@ -26,17 +26,18 @@ jobs:
     - name: Build application
       run: CI=false npm run build
 
-    - name: Deploy to server
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        SERVER: 45.33.14.185
-        USER: root
+    - name: Set up SSH
       run: |
-        echo "$SSH_PRIVATE_KEY" > private_key
-        chmod 600 private_key
-        
-        rsync -avz --delete -e "ssh -i private_key" ./build/ root@45.33.14.185:/var/www/portfolio_prod/personal-portfolio-updated/build/
-        rsync -avz --delete -e "ssh -i private_key" ./ root@45.33.14.185:/var/www/portfolio_prod/personal-portfolio-updated/
+        mkdir -p ~/.ssh
+        ssh-keyscan -H 45.33.14.185 >> ~/.ssh/known_hosts
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        eval $(ssh-agent -s)
+        ssh-add ~/.ssh/id_rsa
+
+    - name: Deploy to server
+      run: |
+        rsync -avz --delete -e "ssh -i ~/.ssh/id_rsa" ./build/ root@45.33.14.185:/var/www/portfolio_prod/personal-portfolio-updated/build/
+        rsync -avz --delete -e "ssh -i ~/.ssh/id_rsa" ./ root@45.33.14.185:/var/www/portfolio_prod/personal-portfolio-updated/
 
         ssh -i private_key root@45.33.14.185 'systemctl reload nginx'
-        rm private_key
