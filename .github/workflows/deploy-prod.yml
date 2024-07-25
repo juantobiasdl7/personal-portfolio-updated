@@ -25,6 +25,8 @@ jobs:
       run: CI=false npm run build
 
     - name: Deploy to server
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       run: |
         mkdir -p ~/.ssh
         echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
