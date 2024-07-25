@@ -30,14 +30,8 @@ jobs:
       run: |
         mkdir -p ~/.ssh
         echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/my_key.pub
-        chmod 600 ~/.ssh/my_key.pub
-        cat ~/.ssh/my_key.pub
-        
+        chmod 600 ~/.ssh/id_rsa        
         ssh-keyscan -H 45.33.14.185 >> ~/.ssh/known_hosts
-        eval $(ssh-agent -s)
-        ssh-add ~/.ssh/id_rsa
         
         rsync -avz --delete -e "ssh -i ~/.ssh/id_rsa" ./build/ root@45.33.14.185:/var/www/portfolio_prod/personal-portfolio-updated/build/
         rsync -avz --delete -e "ssh -i ~/.ssh/id_rsa" ./ root@45.33.14.185:/var/www/portfolio_prod/personal-portfolio-updated/
